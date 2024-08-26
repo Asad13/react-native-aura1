@@ -1,7 +1,41 @@
 {
   "extends": "expo/tsconfig.base",
   "compilerOptions": {
-    "strict": true
+    "target": "esnext", // Ideal for modern JavaScript features
+    "module": "esnext", // Supports ES modules
+    "jsx": "react-native", // Enables JSX and supports React Native's JSX processing
+    "strict": true, // Enables all strict type-checking options
+    "esModuleInterop": true, // Enables emit interoperability between CommonJS and ES Modules
+    "forceConsistentCasingInFileNames": true, // Enforces consistent casing in import paths
+    "skipLibCheck": true, // Skips type checking of declaration files
+    "moduleResolution": "node", // Specifies how module paths are resolved
+    "allowSyntheticDefaultImports": true, // Allows default imports from modules with no default export
+    "resolveJsonModule": true, // Allows importing .json files
+    "isolatedModules": true, // Ensures each file is treated as a separate module
+    "noEmit": true, // Disables emitting output (useful for linting and type-checking only)
+    "types": ["react", "react-native"], // Includes type definitions for React and React Native
+    "baseUrl": ".", // Set base URL for resolving non-relative modules
+    "paths": {
+      "@app/*": ["app/*"], // Alias for app directory
+      "@components/*": ["components/*"], // Alias for components directory
+      "@ui/*": ["ui/*"], // Alias for ui directory
+      "@assets/*": ["assets/*"], // Alias for assets directory
+      "@constants/*": ["constants/*"], // Alias for constants directory
+      "@utils/*": ["utils/*"], // Alias for utils directory (if exists)
+      "@types/*": ["types/*"] // Alias for types directory
+    }
   },
-  "include": [".eslintrc.js", "app/**/*", "components/**/*", "constants/**/*"]
+  "include": [
+    "app/**/*",
+    "components/**/*",
+    "constants/**/*",
+    "types/**/*",
+    "*.d.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "babel.config.js",
+    "metro.config.js"
+    // "jest.config.js"
+  ]
 }
