@@ -18,7 +18,9 @@
     "paths": {
       "@app/*": ["app/*"], // Alias for app directory
       "@components/*": ["components/*"], // Alias for components directory
+      "@components": ["components"], // Alias for components directory's index file
       "@ui/*": ["ui/*"], // Alias for ui directory
+      "@ui": ["ui"], // Alias for ui directory's index file
       "@assets/*": ["assets/*"], // Alias for assets directory
       "@constants/*": ["constants/*"], // Alias for constants directory
       "@utils/*": ["utils/*"], // Alias for utils directory (if exists)
@@ -28,6 +30,7 @@
   "include": [
     "app/**/*",
     "components/**/*",
+    "ui/**/*",
     "constants/**/*",
     "types/**/*",
     "*.d.ts"

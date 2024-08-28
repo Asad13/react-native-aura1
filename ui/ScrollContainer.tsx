@@ -1,9 +1,9 @@
-import React, { ReactNode } from 'react';
+import React, { CSSProperties, ReactNode } from 'react';
 import { StyleSheet, View, ScrollView } from 'react-native';
-import type { ScrollViewProps } from 'react-native';
+import type { ScrollViewProps, StyleProp, ViewStyle } from 'react-native';
 
 type ScrollContainerProps = {
-  containerStyle?: any;
+  containerStyle?: StyleProp<ViewStyle>;
   scrollViewOptions?: ScrollViewProps;
   children: ReactNode;
 };

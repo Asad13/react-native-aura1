@@ -9,7 +9,6 @@ const Layout = ({ children }: { children: ReactNode }) => {
 
   const backgroundStyle = {
     backgroundColor: isDarkMode ? Colors.black[200] : Colors.gray[100],
-    color: isDarkMode ? Colors.gray[100] : Colors.black.default,
   };
 
   return (
@@ -22,7 +21,7 @@ const Layout = ({ children }: { children: ReactNode }) => {
 
 const styles = StyleSheet.create({
   container: {
-    minHeight: '100%',
+    height: '100%',
     paddingTop: 5,
   },
 });

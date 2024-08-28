@@ -27,7 +27,7 @@ const TabBarIcon = ({ title, focused, source, color }: TabBarIconProps) => {
       />
       <Text
         className={`${focused ? 'font-psemibold' : 'font-pregular'} text-[11px]`}
-        style={{ color: focused ? Colors.secondary.default : Colors.gray[100] }}
+        style={{ color: color }}
       >
         {title}
       </Text>
@@ -110,8 +110,9 @@ const TabsLayout = () => {
 const styles = StyleSheet.create({
   tabBarStyle: {
     backgroundColor: Colors.primary,
-    height: 60,
+    height: 65,
     elevation: 0,
+    borderTopWidth: 0,
   },
 });
 

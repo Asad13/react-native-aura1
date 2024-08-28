@@ -1,13 +1,13 @@
 import Layout from '@components/Layout';
-import ScrollContainer from '@ui/ScrollContainer';
-import { View, Text } from 'react-native';
+import { ScrollContainer, ThemedText } from '@ui';
+import { View } from 'react-native';
 
 const Bookmark = () => {
   return (
     <Layout>
       <ScrollContainer>
         <View>
-          <Text>Bookmark</Text>
+          <ThemedText>Bookmark</ThemedText>
         </View>
       </ScrollContainer>
     </Layout>

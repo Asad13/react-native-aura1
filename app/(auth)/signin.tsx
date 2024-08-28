@@ -1,13 +1,13 @@
 import Layout from '@components/Layout';
-import ScrollContainer from '@ui/ScrollContainer';
-import { View, Text } from 'react-native';
+import { ScrollContainer, ThemedText } from '@ui';
+import { View } from 'react-native';
 
 const Signin = () => {
   return (
     <Layout>
       <ScrollContainer>
         <View>
-          <Text>Signin</Text>
+          <ThemedText>Signin</ThemedText>
         </View>
       </ScrollContainer>
     </Layout>
