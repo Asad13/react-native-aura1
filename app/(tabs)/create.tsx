@@ -1,11 +1,16 @@
+import Layout from '@components/Layout';
+import ScrollContainer from '@ui/ScrollContainer';
 import { View, Text } from 'react-native';
-import React from 'react';
 
 const Create = () => {
   return (
-    <View>
-      <Text>Create</Text>
-    </View>
+    <Layout>
+      <ScrollContainer>
+        <View>
+          <Text>Create</Text>
+        </View>
+      </ScrollContainer>
+    </Layout>
   );
 };
 

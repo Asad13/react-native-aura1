@@ -1,11 +1,16 @@
+import Layout from '@components/Layout';
+import ScrollContainer from '@ui/ScrollContainer';
 import { View, Text } from 'react-native';
-import React from 'react';
 
 const Bookmark = () => {
   return (
-    <View>
-      <Text>Bookmark</Text>
-    </View>
+    <Layout>
+      <ScrollContainer>
+        <View>
+          <Text>Bookmark</Text>
+        </View>
+      </ScrollContainer>
+    </Layout>
   );
 };
 
